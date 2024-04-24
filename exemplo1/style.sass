@@ -1,0 +1,22 @@
+@mixin card($width,$height,$br)
+    width:$width 
+    height:$height 
+    border-radius:$br
+    
+    
+$preto: black
+
+div
+    @include card(100px,100px,100px)
+    background: $preto
+    transition: transform .5
+    &:hover
+        transform: scale(1.2)
+
+.card2
+    @include card(50px,501px,50px)
+    background: $preto
+    transition: transform 0.5
+    &:hover
+        transform: scale(1.2)
+    
