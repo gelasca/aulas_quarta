@@ -9,6 +9,7 @@ import { ContatoComponent } from './paginas/contato/contato.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FonteDirective } from './diretivas/fonte.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListaComponent,
     ContatoComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FonteDirective
   ],
   imports: [
     BrowserModule,

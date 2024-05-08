@@ -18,7 +18,8 @@ export class ListaComponent {
     this.http.get('https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json')
     .subscribe({
       next: (data: any)=>{
-        console.log(data[0])
+        console.log(data)
+        this.listaHeroes = data
       },
       error: (error: any)=>{
         console.log(error)

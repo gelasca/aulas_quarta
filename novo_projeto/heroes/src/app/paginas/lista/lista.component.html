@@ -2,15 +2,15 @@
     <input type="button" value="Listar" (click)="getHeroes()">
 </section>
 <section>
-    <div class="lista-container">
+    <div class="lista-container" *ngFor="let hero of listaHeroes">
         <figure>
-            <img src="" alt="">
+            <img src= "{{ hero.images.lg }}" alt="">
         </figure>
         <article>
-            <h1>Nome</h1>
+            <h1 fonte>{{ hero.name }}</h1>
         </article>
         <article>
-            <p>Profissão</p>
+            <p fonte>{{ hero.work.occupation | uppercase }}</p>
         </article>
     </div>
 </section>
